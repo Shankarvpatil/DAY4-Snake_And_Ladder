@@ -13,15 +13,15 @@ public class UC3_NOPlay_Ladder_Snake {
 		switch (number) {
 			case 0:
 				System.out.println("No play");
-				Position += 0;
+				Position = Position + 0;
 				break;
 			case 1:
 				System.out.println("Ladder");
-				Position += Dice;
+				Position = Position + Dice;
 				break;
 			default:
 				System.out.println("Snake");
-				Position -= Dice;
+				Position = Position - Dice;
 				if (Position < 0)
 					Position = 0;		
 		}
